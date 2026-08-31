@@ -1,0 +1,450 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "33886948-2708-45c8-9c51-bddea4236704",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'James', 'age': 16, 'marks': 87, 'div': 11, 'roll.no': 37, 'from': 'europe'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#1 adding and deleting student info from a list\n",
+    "my_dict= {'name':'James','age':16,'marks':87,'div':11,'roll.no':37}\n",
+    "my_dict['from']='europe'\n",
+    "print(my_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "c1808b98-ac53-4959-82a0-7e199fbf7aff",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'James', 'age': 16, 'marks': 87, 'div': 11, 'roll.no': 39, 'from': 'europe'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_dict['roll.no']=39\n",
+    "print(my_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "17a679d2-538c-48f3-b583-255814560c6a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'James', 'marks': 87, 'div': 11, 'roll.no': 39, 'from': 'europe'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "del my_dict['age']\n",
+    "print(my_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ca050e69-f27d-4a99-8d2b-a3bc1df4c229",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "d1b65c54-19dc-498f-ad92-84ea3e34c27d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'polar bear', 'color': 'white', 'likes': 'icee'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2convert list to dict\n",
+    "list11=['name','color','likes']\n",
+    "list22=['polar bear','white','icee']\n",
+    "w_dict = dict(zip(list11,list22))\n",
+    "print(w_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "ddabc934-adb4-499b-985b-8d7a7aaca477",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['age', 'from', 'name']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#3 sort the elements\n",
+    "a_dict={'name':'Marie','age':'24','from':'USA'}\n",
+    "sorted_1= sorted(a_dict)\n",
+    "print(sorted_1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "21b57606-1e85-4b85-ae00-b08031a9eff9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['24', 'Marie', 'USA']\n"
+     ]
+    }
+   ],
+   "source": [
+    "sorted_1=sorted(a_dict.values())\n",
+    "print(sorted_1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "44d47eaf-0da0-4ee9-9f4c-2f5e2e185ed8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "KEYSLIST: ['A', 'B', 'c']\n",
+      "VALUESLIST: [67, 68, 69]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#4 converting dict to list\n",
+    "dict_67={'A':67,'B':68,'c':69}\n",
+    "\n",
+    "keyslist=list(dict_67.keys())\n",
+    "valueslist=list(dict_67.values())\n",
+    "print('KEYSLIST:',keyslist)\n",
+    "print('VALUESLIST:',valueslist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "44ec4757-8094-4674-a275-dbf632a624c6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "mean of values: 61.25\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 5Mean of values of dictionary\n",
+    "D11={'m':50,'m1':60,'m2':65,'m3':70}\n",
+    "mean_val=sum(D11.values())/len(D11)\n",
+    "print('mean of values:',mean_val)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "84f8ed43-6ac1-4e8d-b6bb-746aae38ac8f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "e8b238e3-6602-4d67-8c38-389d374da1a3",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "ename": "IndexError",
+     "evalue": "list index out of range",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+      "Input \u001b[0;32mIn [14]\u001b[0m, in \u001b[0;36m<cell line: 7>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      3\u001b[0m dict_23\u001b[38;5;241m=\u001b[39m{ \u001b[38;5;124m'\u001b[39m\u001b[38;5;124mname\u001b[39m\u001b[38;5;124m'\u001b[39m:[\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mYash\u001b[39m\u001b[38;5;124m'\u001b[39m,\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mNeel\u001b[39m\u001b[38;5;124m'\u001b[39m,\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mDev\u001b[39m\u001b[38;5;124m'\u001b[39m],\n\u001b[1;32m      4\u001b[0m           \u001b[38;5;124m'\u001b[39m\u001b[38;5;124mrollno\u001b[39m\u001b[38;5;124m'\u001b[39m:[\u001b[38;5;241m11\u001b[39m,\u001b[38;5;241m12\u001b[39m,\u001b[38;5;241m13\u001b[39m],\n\u001b[1;32m      5\u001b[0m           \u001b[38;5;124m'\u001b[39m\u001b[38;5;124mmarks\u001b[39m\u001b[38;5;124m'\u001b[39m:[\u001b[38;5;241m78\u001b[39m,\u001b[38;5;241m56\u001b[39m,\u001b[38;5;241m98\u001b[39m] }\n\u001b[1;32m      6\u001b[0m \u001b[38;5;66;03m#a)\u001b[39;00m\n\u001b[0;32m----> 7\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[43mdict_23\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mname\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m]\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m3\u001b[39;49m\u001b[43m]\u001b[49m)\n",
+      "\u001b[0;31mIndexError\u001b[0m: list index out of range"
+     ]
+    }
+   ],
+   "source": [
+    "# 6 performing the 3 operations on the dictionary\n",
+    "\n",
+    "dict_23={ 'name':['Yash','Neel','Dev'],\n",
+    "          'rollno':[11,12,13],\n",
+    "          'marks':[78,56,98] }\n",
+    "#a)\n",
+    "print(dict_23['name'][3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "bdb73b1a-d16f-484e-ab1b-09dd7f68f292",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Dev\n"
+     ]
+    }
+   ],
+   "source": [
+    "#performing the 3 operations on the dictionary\n",
+    "\n",
+    "dict_23={ 'name':['Yash','Neel','Dev'],\n",
+    "          'rollno':[11,12,13],\n",
+    "          'marks':[78,56,98] }\n",
+    "#a)\n",
+    "print(dict_23['name'][2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "5ec6fcda-82e5-4a80-b6ee-fbea39dfe977",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12\n"
+     ]
+    }
+   ],
+   "source": [
+    "#b) \n",
+    "print(dict_23['rollno'][1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "aace19c9-b34b-4cc2-8196-181810805b9f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "98\n"
+     ]
+    }
+   ],
+   "source": [
+    "#c)\n",
+    "print(max(dict_23['marks']))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7a8284cb-fd7b-4bd8-96d7-9c9744eaf2e7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "fd627782-2da7-44f7-9d12-f71a131728e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Frequency of letters: {'M': 1}\n",
+      "Frequency of letters: {'M': 1, 'i': 1}\n",
+      "Frequency of letters: {'M': 1, 'i': 1, 's': 1}\n",
+      "Frequency of letters: {'M': 1, 'i': 1, 's': 2}\n",
+      "Frequency of letters: {'M': 1, 'i': 2, 's': 2}\n",
+      "Frequency of letters: {'M': 1, 'i': 2, 's': 3}\n",
+      "Frequency of letters: {'M': 1, 'i': 2, 's': 4}\n",
+      "Frequency of letters: {'M': 1, 'i': 3, 's': 4}\n",
+      "Frequency of letters: {'M': 1, 'i': 3, 's': 4, 'p': 1}\n",
+      "Frequency of letters: {'M': 1, 'i': 4, 's': 4, 'p': 1}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 7 Calculate frequency of letters occouring in a given string\n",
+    "e='Mississipi' \n",
+    "freq={}\n",
+    "for characters in e:\n",
+    "    freq[characters]=freq.get(characters,0)+1\n",
+    "\n",
+    "    print('Frequency of letters:',freq)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "40141344-7e15-447e-8c31-0042fe0f7f2f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "564fc918-ea79-4da4-8b7b-1ff962ca162b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "5: 5\n",
+      "2: 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(Quotient,Remainder): (2, 1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 8\n",
+    "num=int(input('5:'))\n",
+    "den=int(input('2:'))\n",
+    "gives=(num//den,num%den)\n",
+    "print('(Quotient,Remainder):',gives)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bdfd56ee-47b6-4254-b041-1d08792ab501",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "54c00e1b-7fcb-4112-a0c7-f6a5cc4583dc",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "unexpected indent (2592865096.py, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Input \u001b[0;32mIn [2]\u001b[0;36m\u001b[0m\n\u001b[0;31m    from datetime import date\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m unexpected indent\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 9no of days between the 2 date \n",
+    " from datetime import date\n",
+    "d11=(1,1,2002)\n",
+    "d12=(29,8,2026)\n",
+    "date1=date(d11[0],d11[1],d11[2])\n",
+    "date2=date(d12[0],d12[1],d12[2])\n",
+    "\n",
+    "daysbetween=abs((date2-date1).days)\n",
+    "print('days between dates:',daysbetween)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "4b583343-e1ee-4356-8b17-7a3bead8f9c9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "days between dates: 9006\n"
+     ]
+    }
+   ],
+   "source": [
+    "# no of days between the 2 date \n",
+    "from datetime import date\n",
+    "d11=(1,1,2002)\n",
+    "d12=(29,8,2026)\n",
+    "date1=date(d11[2],d11[1],d11[0])\n",
+    "date2=date(d12[2],d12[1],d12[0])\n",
+    "\n",
+    "daysbetween=abs((date2-date1).days)\n",
+    "print('days between dates:',daysbetween)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "877b8edc-8133-47ba-be19-d6a15105bec6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "anaconda-2022.05-py39",
+   "language": "python",
+   "name": "conda-env-anaconda-2022.05-py39-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
